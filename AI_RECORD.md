@@ -25,4 +25,10 @@ Add an entry whenever AI tools help with architecture, code, docs, or debugging 
 - **Author:** Bhavana
 - **Tool:** Cursor agent
 - **Request:** Activity 10 — write `contracts/ProjectAnchor.sol`: store a `bytes32` commitment and last-updated time; only deployer can update; reject all-zero commitment; emit an event on update; expose a read that returns both values
-- **Outcome:** `ProjectAnchor` compiles with Hardhat; `anchor` is `onlyOwner`, reverts `EmptyCommitment` on `bytes32(0)`, emits `CommitmentAnchored`; `current()` returns `(commitment, updatedAt)` 
+- **Outcome:** `ProjectAnchor` compiles with Hardhat; `anchor` is `onlyOwner`, reverts `EmptyCommitment` on `bytes32(0)`, emits `CommitmentAnchored`; `current()` returns `(commitment, updatedAt)`
+
+### 2026-09-17 — Activity 11 ProjectAnchor tests
+
+- **Tool:** Cursor agent
+- **Request:** Activity 11 — add `test/ProjectAnchor.test.js` covering owner setup, successful anchor + event, non-owner reject, empty commitment reject; run `npx hardhat test`
+- **Outcome:** Four passing tests against `ProjectAnchor`; suite includes happy path plus access-control and empty-commitment failure cases 
