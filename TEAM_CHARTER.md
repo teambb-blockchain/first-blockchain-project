@@ -1,5 +1,7 @@
 # Team Charter
 
+**Team name:** teambb
+
 ## Purpose
 
 Define how this team collaborates on the first blockchain project: goals, roles, communication, and quality expectations.
@@ -12,9 +14,11 @@ Define how this team collaborates on the first blockchain project: goals, roles,
 
 ## Roles
 
-| Role | Responsibilities |
-|------|------------------|
-| TBD | Fill in team members and ownership areas |
+| Role | Member |
+|------|--------|
+| Repository owner | Britt Huffman (@brittshanklin) |
+| DIDLab operator | Bhavana Sriharika Kondapalli (@bhavana-sriharika-kondapalli) |
+| Evidence keeper | Britt Huffman (@brittshanklin) |
 
 ## Working agreements
 
@@ -22,10 +26,17 @@ Define how this team collaborates on the first blockchain project: goals, roles,
 - Discuss architecture changes before large refactors; log the outcome as an ADR in `decisions/`
 - Do not commit `.env`, private keys, or other secrets
 - Update `AI_RECORD.md` when AI tools materially assist design or implementation
+- Every member commits to the repository every week
 
 ## Communication
 
-- TBD: preferred channel, meeting cadence, and decision deadlines
+- **Channel and response time:** LinkedIn or email using UMKC; respond within 12 hours, except on weekends
+- **Meeting time outside class:** after class on Tuesdays and Thursdays
+
+## Accountability
+
+- Two missed commitments result in warnings
+- A third missed commitment means owing the other team members one 20oz soda of their choice
 
 ## Definition of done
 
