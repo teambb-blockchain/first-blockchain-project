@@ -18,4 +18,11 @@ Add an entry whenever AI tools help with architecture, code, docs, or debugging 
 
 - **Tool:** Cursor agent
 - **Request:** Activity 9 — initialize Hardhat (JavaScript), configure `hardhat` + `didlab` networks with dotenv, add `contracts/SimpleStorage.sol`, compile
-- **Outcome:** Hardhat 2.x project with `@nomicfoundation/hardhat-toolbox` and `dotenv`; sample `Lock` removed; `SimpleStorage` compiles to `artifacts/`; ABI + bytecode available in `SimpleStorage.json` 
+- **Outcome:** Hardhat 2.x project with `@nomicfoundation/hardhat-toolbox` and `dotenv`; sample `Lock` removed; `SimpleStorage` compiles to `artifacts/`; ABI + bytecode available in `SimpleStorage.json`
+
+### 2026-09-17 — Activity 10 ProjectAnchor (Bhavana)
+
+- **Author:** Bhavana
+- **Tool:** Cursor agent
+- **Request:** Activity 10 — write `contracts/ProjectAnchor.sol`: store a `bytes32` commitment and last-updated time; only deployer can update; reject all-zero commitment; emit an event on update; expose a read that returns both values
+- **Outcome:** `ProjectAnchor` compiles with Hardhat; `anchor` is `onlyOwner`, reverts `EmptyCommitment` on `bytes32(0)`, emits `CommitmentAnchored`; `current()` returns `(commitment, updatedAt)` 
